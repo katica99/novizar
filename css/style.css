@@ -125,6 +125,7 @@ img{
 }
 @media screen and (min-width:1024px) and (max-width: 1280px){
      #opseg{
+		 background-size: contain;
 		width: 960px;
 	}
 	#hero > h1 h2 h3 p {
@@ -141,6 +142,7 @@ img{
 }
 @media screen and (min-width:768px) and (max-width: 1023px){
 	#opseg{
+		background-size: contain;
 		width: 700px;
 	}	
 		#hero > h1 h2 h3 p {
@@ -154,19 +156,31 @@ img{
 	    align-items: center;
 }
 }
-@media screen and  (max-width: 767px){
+@media  screen and (min-width:300px) and (max-width: 767px){
 	#opseg{
-		width: 80%;
+		background-size: contain;
+		width: 350px;
 	}
+			#header{
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+}
 	h1, h2, h3,h4,h5,h6{
+		margin:0;
+		padding:20px;
 		font-size: 18px;
 	}
+	
 	#hero{
-		display: flex;
-		margin:0;
+		margin:35px 5;
 		padding:10px;
 		font-size: 16px;
 		
+		
+	}
+	#hero>p{
+		margin:5px;
 	}
 		#header{
 		display: flex;
@@ -174,8 +188,52 @@ img{
 	    align-items: center;
 }
 	#logo-zar img{
-	width:100px;
+	width:80%;
 	margin: 5px;
 	
 }
+}
+	@media screen and  (max-width: 299px){
+		#opseg{
+		background-size: contain;	
+		width:80%;
+		
+		}
+		#header>wapper{
+		flex-direction: column;
+			align-items: stretch;
+        }
+		#logo-zar{
+			padding:5px;
+			text-align: center;
+		}
+		.negative{
+			display: flex;
+			width:auto;
+			margin:5;
+		padding:10px;
+		font-size: 16px;
+			
+		}
+		
+		#hero{
+		margin:5;
+		padding:10px;
+		font-size: 16px;	
+		
+	}
+		h1, h2, h3,h4,h5,h6{	
+		margin:20px 0;
+		padding:10px;
+		font-size: 14px;
+	}
+		p{
+		flex-basis: auto;
+		margin:0px;
+		padding:10px;
+		font-size: 10px;
+	}
+		#kontakt-map{
+			flex-direction: column;	
+		}
 }
